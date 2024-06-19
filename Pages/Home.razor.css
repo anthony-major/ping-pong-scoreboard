@@ -1,0 +1,62 @@
+* {
+    user-select: none;
+    font-family: monospace;
+}
+
+.sets-container {
+    height: 10%;
+}
+
+.scores-container {
+    height: 80%;
+}
+
+.controls-container {
+    height: 10%;
+}
+
+.sets-container, .scores-container, .controls-container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.score {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.controls-container button {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    font-size: 2em;
+}
+
+h1 {
+    color: cornflowerblue;
+    font-size: 10em;
+    margin: 0;
+}
+
+h2 {
+    color: crimson;
+    font-size: 5em;
+    margin: 0;
+    width: 100%;
+}
+
+h3 {
+    font-weight: bold;
+    font-size: 2em;
+    margin: 0;
+}

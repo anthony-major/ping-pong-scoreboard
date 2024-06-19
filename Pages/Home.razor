@@ -1,0 +1,52 @@
+﻿@page "/"
+
+<PageTitle>Scoreboard</PageTitle>
+
+<div class="sets-container">
+    <h2>@game.Player1.Sets</h2>
+    <h2>@game.Player2.Sets</h2>
+</div>
+<div class="scores-container">
+    <div class="score" @onclick="UpdateScore1">
+        <h1>@game.Player1.Score</h1>
+        @if (game.Player1.IsServing)
+        {
+            <h3>^</h3>
+        }
+    </div>
+    <div class="score" @onclick="UpdateScore2">
+        <h1>@game.Player2.Score</h1>
+        @if (game.Player2.IsServing)
+        {
+            <h3>^</h3>
+        }
+    </div>
+</div>
+<div class="controls-container">
+    <button @onclick="Undo">Undo</button>
+    <button @onclick="Reset">Reset</button>
+</div>
+
+@code {
+    private Game game = new();
+
+    private void UpdateScore1()
+    {
+        game.UpdateScore(game.Player1);
+    }
+
+    private void UpdateScore2()
+    {
+        game.UpdateScore(game.Player2);
+    }
+
+    private void Undo()
+    {
+        game.UndoPoint();
+    }
+
+    private void Reset()
+    {
+        game.ResetAll();
+    }
+}

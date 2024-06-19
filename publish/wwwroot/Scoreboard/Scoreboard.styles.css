@@ -1,0 +1,63 @@
+/* /Pages/Home.razor.rz.scp.css */
+*[b-1bcopij1pp] {
+    user-select: none;
+    font-family: monospace;
+}
+
+.sets-container[b-1bcopij1pp] {
+    height: 10%;
+}
+
+.scores-container[b-1bcopij1pp] {
+    height: 80%;
+}
+
+.controls-container[b-1bcopij1pp] {
+    height: 10%;
+}
+
+.sets-container[b-1bcopij1pp], .scores-container[b-1bcopij1pp], .controls-container[b-1bcopij1pp]{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.score[b-1bcopij1pp] {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.controls-container button[b-1bcopij1pp] {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    font-size: 2em;
+}
+
+h1[b-1bcopij1pp] {
+    color: cornflowerblue;
+    font-size: 10em;
+    margin: 0;
+}
+
+h2[b-1bcopij1pp] {
+    color: crimson;
+    font-size: 5em;
+    margin: 0;
+    width: 100%;
+}
+
+h3[b-1bcopij1pp] {
+    font-weight: bold;
+    font-size: 2em;
+    margin: 0;
+}
